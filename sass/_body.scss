@@ -1,0 +1,108 @@
+// Uso de variables
+$background-color: white;
+$text-color: #333;
+$font-family-base: Arial, sans-serif;
+$font-family-secondary: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+$card-img-height: 350px;
+$card-border-radius: 15px;
+$avatar-border-radius: 5%;
+$box-shadow-intense: 0 6px 12px rgba(0, 0, 0, 0.3);
+$carousel-img-max-height: 650px;
+
+// uso de Mixins
+@mixin center-text {
+  text-align: center;
+}
+
+@mixin card-image {
+  width: 100%;
+  height: $card-img-height;
+  object-fit: cover;
+}
+
+@mixin card-body {
+  flex: 1;
+}
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body {
+  background-color: $background-color;
+  font-family: $font-family-base;
+  margin: 0;
+  padding: 0;
+
+  main {
+    padding: 20px;
+    background-color: $background-color;
+  }
+
+  h1,
+  h2,
+  p,
+  a {
+    font-family: $font-family-secondary;
+  }
+
+  .main-seccion {
+    padding: 20px;
+    @include center-text;
+  }
+
+  .titulo-principal {
+    @include center-text;
+    margin: 20px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  .story-section {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .card {
+    @include card;
+
+    .card-img-top {
+      @include card-image;
+    }
+
+    .card-body {
+      @include card-body;
+    }
+
+    .card-text {
+      text-align: justify;
+    }
+  }
+
+  #carouselExampleFade img {
+    max-height: $carousel-img-max-height;
+    border-radius: $card-border-radius;
+  }
+}
+
+.character-avatar {
+  width: 100%;
+  height: auto;
+  border-radius: $avatar-border-radius;
+  box-shadow: $box-shadow-intense;
+}
+
+.character-container {
+  @include center-text;
+  margin-bottom: 20px;
+}
+
+.character-name {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: $text-color;
+}

@@ -1,0 +1,40 @@
+.character-card {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  width: 100%; /* Ancho completo del contenedor */
+  height: 500px; /* Establece una altura fija para todas las tarjetas */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  position: relative; /* Para el posicionamiento absoluto de la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+
+  &:hover {
+    transform: scale(
+      1.05
+    ); /* Agranda la tarjeta ligeramente al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el cursor */
+  }
+
+  .character-img {
+    position: absolute; /* Posiciona la imagen dentro de la tarjeta */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    width: 100%; /* Ajusta el ancho al contenedor */
+    height: 100%; /* Ajusta la altura al contenedor */
+    object-fit: contain; /* Ajusta la imagen al contenedor manteniendo la proporción */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Ajusta la imagen al centro del contenedor */
+  }
+
+  .character-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente según tu preferencia */
+  }
+}

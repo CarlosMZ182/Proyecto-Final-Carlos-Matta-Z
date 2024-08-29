@@ -1,0 +1,76 @@
+/* Ajustes adicionales para pantallas más grandes */
+@media (min-width: 1024px) {
+  .gameplay-video h2 {
+    font-size: 48px; /* Tamaño de fuente aún más grande para pantallas muy grandes */
+  }
+
+  .gameplay-video p {
+    font-size: 20px; /* Tamaño de fuente para pantallas grandes */
+  }
+}
+
+@media (max-width: 768px) {
+  .social-icon {
+    width: 70px;
+  }
+}
+
+/* Estilos responsivos */
+@media (min-width: 401px) {
+  .join-section .links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 765px) {
+  .character-card {
+    height: 700px; /* Reduce la altura de las tarjetas para vistas móviles */
+    margin: 20px auto; /* Aumenta el margen y centra las tarjetas */
+    max-width: 90%; /* Asegura que las tarjetas no ocupen todo el ancho */
+  }
+
+  .row {
+    justify-content: center; /* Centra las tarjetas dentro de la fila */
+  }
+}
+
+@media (max-width: 768px) {
+  .secret-card {
+    max-width: 90%; /* Ajusta el ancho máximo en vista móvil */
+  }
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 767.98px) {
+  .gallery-item {
+    flex: 0 0 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+    max-width: 100%; /* Limita el ancho máximo al 100% */
+    padding: 5px; /* Reduce el espacio entre las imágenes */
+  }
+
+  .gallery-item img {
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  }
+}
+
+@media (max-width: 768px) {
+  .secret-title {
+    font-size: 1.2rem; /* Disminuye el tamaño de fuente para móviles */
+    margin-bottom: 0.8rem; /* Ajusta el margen inferior */
+  }
+
+  .secret-text {
+    margin-top: 1rem; /* Ajusta el margen superior */
+    margin-bottom: 1.5rem; /* Da más espacio inferior */
+  }
+
+  .cajas-secretos {
+    padding: 1rem; /* Añade padding a la caja de texto para más espacio */
+  }
+
+  .img-fluid {
+    margin-bottom: 1.5rem; /* Añade espacio debajo de la imagen en móviles */
+  }
+}

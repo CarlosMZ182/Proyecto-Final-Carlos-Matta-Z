@@ -1,0 +1,28 @@
+.gameplay-video {
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 36px; /* Tamaño de fuente para pantallas grandes */
+  }
+
+  p {
+    font-size: 18px; /* Tamaño de fuente para pantallas grandes */
+    max-width: 900px; /* Ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo en su contenedor */
+  }
+
+  .video-wrapper {
+    border-radius: 15px; /* Redondea los bordes del contenedor */
+    overflow: hidden; /* Asegura que el iframe no se salga del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra para resaltar el contenedor */
+    max-width: 800px; /* Tamaño máximo del video en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor del video */
+
+    iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9; /* Mantiene la proporción del video */
+      border: none; /* Elimina el borde predeterminado del iframe */
+    }
+  }
+}

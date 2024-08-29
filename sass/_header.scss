@@ -1,0 +1,39 @@
+/* Estilos para el header */
+
+header {
+  padding-bottom: 30px; /* Ajusta el espacio inferior del header */
+}
+
+header img {
+  width: 250px; /* Ancho de la imagen en el header */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Gradiente para el menu de navegacion  */
+
+.custom-nav {
+  background-color: #325aab;
+  background-image: linear-gradient(147deg, #325aab 0%, #32ab82 74%);
+}
+
+/* Efecto de luz en el texto al pasar el cursor */
+.custom-text {
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.custom-text:hover {
+  color: #ffffff; /* Asegúrate de que el texto permanezca visible */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Efecto de luz */
+}
+
+.custom-logo {
+  transition: transform 0.5s ease, text-shadow 0.5s ease;
+}
+
+.custom-logo:hover {
+  transform: scale(1.1) rotate(5deg); /* Aumenta ligeramente el tamaño y gira el logo */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Aplica el mismo brillo que a los enlaces */
+}

@@ -1,0 +1,72 @@
+body.comunidad {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-comunidad {
+  text-align: center;
+  margin: 20px 20px;
+  padding: 5px 5px;
+}
+
+.comunidad-main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.links {
+  padding-top: 40px;
+}
+
+.parrafo-comunidad {
+  text-align: justify;
+}
+.sub-comunidad {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.welcome-section,
+.join-section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.join-section .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.join-section a {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.join-section a:hover {
+  background-color: #0056b3;
+}
+
+.titulo-unirse {
+  text-align: center;
+}

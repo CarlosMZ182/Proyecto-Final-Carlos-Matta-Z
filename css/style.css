@@ -1,0 +1,450 @@
+@charset "UTF-8";
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body main {
+  padding: 20px;
+  background-color: white;
+}
+body h1,
+body h2,
+body p,
+body a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body .main-seccion {
+  padding: 20px;
+  text-align: center;
+}
+body .titulo-principal {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+}
+body .story-section {
+  padding: 20px;
+  margin-top: 20px;
+}
+body .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body .card .card-img-top {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+body .card .card-body {
+  flex: 1;
+}
+body .card .card-text {
+  text-align: justify;
+}
+body #carouselExampleFade img {
+  max-height: 650px;
+  border-radius: 15px;
+}
+
+.character-avatar {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.character-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.character-name {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+body.comunidad {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-comunidad {
+  text-align: center;
+  margin: 20px 20px;
+  padding: 5px 5px;
+}
+
+.comunidad-main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.links {
+  padding-top: 40px;
+}
+
+.parrafo-comunidad {
+  text-align: justify;
+}
+
+.sub-comunidad {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.welcome-section,
+.join-section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.join-section .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.join-section a {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.join-section a:hover {
+  background-color: #0056b3;
+}
+
+.titulo-unirse {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(147deg, #325aab 0%, #32ab82 74%); /* Gradiente de fondo */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+footer .footer-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+  /* Sin brillo por defecto */
+}
+footer .footer-logo:hover {
+  /* Efecto de brillo al pasar el cursor */
+  filter: drop-shadow(0 0 10px #fff);
+}
+footer .footer-text {
+  margin: 10px 0;
+  color: whitesmoke;
+  font-size: 1.3em;
+  /* Sin brillo por defecto */
+}
+footer .footer-text:hover {
+  /* Efecto de brillo al pasar el cursor */
+  text-shadow: 0 0 5px #fff;
+}
+footer .iconos-redes {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+footer .iconos-redes .social-icon {
+  width: 100px;
+  height: auto;
+  margin: 0 15px;
+  /* Sin brillo por defecto */
+}
+footer .iconos-redes .social-icon:hover {
+  /* Efecto de brillo al pasar el cursor */
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+/* Galería */
+.gallery-item {
+  overflow: hidden;
+  padding: 15px; /* Espacio entre las imágenes */
+}
+.gallery-item img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 250px; /* Ajusta el tamaño para que las imágenes sean más grandes */
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarla */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-item img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  filter: saturate(1.5); /* Aumenta la saturación de la imagen */
+}
+
+/* Modal de imagen */
+#imageModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#imageModal img {
+  display: block;
+  margin: 10% auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+/* Estilos para el header */
+header {
+  padding-bottom: 30px; /* Ajusta el espacio inferior del header */
+}
+
+header img {
+  width: 250px; /* Ancho de la imagen en el header */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Gradiente para el menu de navegacion  */
+.custom-nav {
+  background-color: #325aab;
+  background-image: linear-gradient(147deg, #325aab 0%, #32ab82 74%);
+}
+
+/* Efecto de luz en el texto al pasar el cursor */
+.custom-text {
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.custom-text:hover {
+  color: #ffffff; /* Asegúrate de que el texto permanezca visible */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Efecto de luz */
+}
+
+.custom-logo {
+  transition: transform 0.5s ease, text-shadow 0.5s ease;
+}
+
+.custom-logo:hover {
+  transform: scale(1.1) rotate(5deg); /* Aumenta ligeramente el tamaño y gira el logo */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Aplica el mismo brillo que a los enlaces */
+}
+
+/* Ajustes adicionales para pantallas más grandes */
+@media (min-width: 1024px) {
+  .gameplay-video h2 {
+    font-size: 48px; /* Tamaño de fuente aún más grande para pantallas muy grandes */
+  }
+  .gameplay-video p {
+    font-size: 20px; /* Tamaño de fuente para pantallas grandes */
+  }
+}
+@media (max-width: 768px) {
+  .social-icon {
+    width: 70px;
+  }
+}
+/* Estilos responsivos */
+@media (min-width: 401px) {
+  .join-section .links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 765px) {
+  .character-card {
+    height: 700px; /* Reduce la altura de las tarjetas para vistas móviles */
+    margin: 20px auto; /* Aumenta el margen y centra las tarjetas */
+    max-width: 90%; /* Asegura que las tarjetas no ocupen todo el ancho */
+  }
+  .row {
+    justify-content: center; /* Centra las tarjetas dentro de la fila */
+  }
+}
+@media (max-width: 768px) {
+  .secret-card {
+    max-width: 90%; /* Ajusta el ancho máximo en vista móvil */
+  }
+}
+/* Media Query para dispositivos móviles */
+@media (max-width: 767.98px) {
+  .gallery-item {
+    flex: 0 0 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+    max-width: 100%; /* Limita el ancho máximo al 100% */
+    padding: 5px; /* Reduce el espacio entre las imágenes */
+  }
+  .gallery-item img {
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  }
+}
+@media (max-width: 768px) {
+  .secret-title {
+    font-size: 1.2rem; /* Disminuye el tamaño de fuente para móviles */
+    margin-bottom: 0.8rem; /* Ajusta el margen inferior */
+  }
+  .secret-text {
+    margin-top: 1rem; /* Ajusta el margen superior */
+    margin-bottom: 1.5rem; /* Da más espacio inferior */
+  }
+  .cajas-secretos {
+    padding: 1rem; /* Añade padding a la caja de texto para más espacio */
+  }
+  .img-fluid {
+    margin-bottom: 1.5rem; /* Añade espacio debajo de la imagen en móviles */
+  }
+}
+.character-card {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  width: 100%; /* Ancho completo del contenedor */
+  height: 500px; /* Establece una altura fija para todas las tarjetas */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  position: relative; /* Para el posicionamiento absoluto de la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+.character-card:hover {
+  transform: scale(1.05); /* Agranda la tarjeta ligeramente al pasar el cursor */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el cursor */
+}
+.character-card .character-img {
+  position: absolute; /* Posiciona la imagen dentro de la tarjeta */
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  width: 100%; /* Ajusta el ancho al contenedor */
+  height: 100%; /* Ajusta la altura al contenedor */
+  object-fit: contain; /* Ajusta la imagen al contenedor manteniendo la proporción */
+  transform: translate(-50%, -50%); /* Ajusta la imagen al centro del contenedor */
+}
+.character-card .character-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2rem; /* Ajusta el tamaño de la fuente según tu preferencia */
+}
+
+/* Resetear padding y margin para todos los elementos */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.secret-card {
+  width: 100%; /* Ajusta a la anchura del contenedor */
+  max-width: 1500px; /* Ajusta la anchura máxima de la tarjeta */
+  height: 500px; /* Ajusta la altura de la tarjeta */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Espacio entre filas */
+  margin-left: auto; /* Centra la tarjeta */
+  margin-right: auto; /* Centra la tarjeta */
+}
+.secret-card:hover {
+  transform: scale(1.05);
+}
+.secret-card img {
+  width: 100%;
+  height: 300px; /* Ajusta la altura de la imagen */
+  object-fit: cover;
+}
+.secret-card .card-body {
+  padding: 15px;
+  height: 50%; /* Ajusta la altura del contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.secret-card .btn-primary {
+  display: inline-block;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.secret-card .btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+.secret-card .secret-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.secret-card .secret-text {
+  font-size: 1rem;
+  color: #666;
+  text-align: justify;
+  margin-top: 1rem; /* Espacio encima del texto */
+  margin-bottom: 1rem; /* Espacio debajo del texto */
+}
+
+.cajas-secretos {
+  text-align: justify;
+}
+
+.gameplay-video {
+  margin-bottom: 50px;
+}
+.gameplay-video h2 {
+  font-size: 36px; /* Tamaño de fuente para pantallas grandes */
+}
+.gameplay-video p {
+  font-size: 18px; /* Tamaño de fuente para pantallas grandes */
+  max-width: 900px; /* Ancho máximo del párrafo */
+  margin: 0 auto; /* Centra el párrafo en su contenedor */
+}
+.gameplay-video .video-wrapper {
+  border-radius: 15px; /* Redondea los bordes del contenedor */
+  overflow: hidden; /* Asegura que el iframe no se salga del contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra para resaltar el contenedor */
+  max-width: 800px; /* Tamaño máximo del video en pantallas grandes */
+  margin: 0 auto; /* Centra el contenedor del video */
+}
+.gameplay-video .video-wrapper iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9; /* Mantiene la proporción del video */
+  border: none; /* Elimina el borde predeterminado del iframe */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fans Page dedicado al videojuego de Super Mario World, Descubre los secretos y niveles ocultos."
+    />
+    <meta
+      name="keywords"
+      content="Fans Page, Wiki, Super Mario World, Super Nintendo, Retro, Gameplay Super Mario World"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      href="./images/favicon/marioFavicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Fans Page Super Mario</title>
+  </head>
+
+  <body>
+    <!-- inicio del Header -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg custom-nav">
+        <a href="index.html">
+          <img
+            src="./images/logos/logo2.png"
+            alt="Logo de navbar de Super Mario World"
+            class="logo-nav custom-logo"
+          />
+        </a>
+        <div class="container-fluid">
+          <a class="navbar-brand text-white custom-text" href="index.html">Fans Page</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link me-3 text-white custom-text" href="index.html"
+                >Inicio</a
+              >
+              <a
+                class="nav-link me-3 text-white custom-text"
+                href="./pages/personajes.html"
+                >Personajes</a
+              >
+              <a
+                class="nav-link me-3 text-white custom-text"
+                href="./pages/galeria.html"
+                >Galeria</a
+              >
+              <a
+                class="nav-link me-3 text-white custom-text"
+                href="./pages/secretos.html"
+                >Secretos</a
+              >
+              <a
+                class="nav-link me-3 text-white custom-text"
+                href="./pages/comunidad.html"
+                >Comunidad</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <h1
+      class="text-center display-4 my-4 animate__animated animate__fadeIn"
+      data-aos="fade-up"
+    >
+      FansPage Super Mario World
+    </h1>
+
+    <!-- Baner con imagenes interactivas o animaciones -->
+
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade w-75 mx-auto"
+      data-aos="fade-up"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/banner/banner01.jpg"
+            class="d-block w-100"
+            alt="Imagen tipo banner con personajes de Super Mario World"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/banner/banner02.jpg"
+            class="d-block w-100"
+            alt="Imagen del iconico personaje Mario Bross"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/banner/banner03.jpg"
+            class="d-block w-100"
+            alt="Imagen con Mario enfretandose a Bowser"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Seccion principal del index  -->
+    <main class="main-seccion" data-aos="fade-up">
+      <h2 class="animate__animated animate__fadeIn" data-aos="fade-up">
+        Entradas Recientes
+      </h2>
+      <section class="story-section">
+        <div class="container">
+          <div class="row" data-aos="fade-up">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+              <div
+                class="card animate__animated animate__fadeIn"
+                data-aos="fade-up"
+              >
+                <img
+                  src="./images/seccion/seccion01.jpg"
+                  class="card-img-top"
+                  alt="Imagen de creador de Super Mario World"
+                />
+                <div
+                  class="card-body nimate__animated animate__fadeIn"
+                  data-aos="fade-up"
+                >
+                  <h3 class="card-title">Introducción a Super Mario World</h3>
+                  <p class="card-text">
+                    Super Mario World es un videojuego de plataformas lanzado
+                    para la Super Nintendo Entertainment System (SNES) en 1990.
+                    Es la cuarta entrega de la serie principal de Mario...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+              <div
+                class="card animate__animated animate__fadeIn"
+                data-aos="fade-up"
+              >
+                <img
+                  src="./images/seccion/seccion02.jpg"
+                  class="card-img-top"
+                  alt="Imagen con personajes de super mario world, lucha final con Bowser"
+                />
+                <div
+                  class="card-body nimate__animated animate__fadeIn"
+                  data-aos="fade-up"
+                >
+                  <h3 class="card-title">La Historia del Juego</h3>
+                  <p class="card-text">
+                    La historia de Super Mario World sigue a Mario mientras
+                    viaja por Dinosaur Land para rescatar a la Princesa Peach
+                    del malvado Bowser...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+              <div
+                class="card animate__animated animate__fadeIn"
+                data-aos="fade-up"
+              >
+                <img
+                  src="./images/seccion/seccion03.jpg"
+                  class="card-img-top"
+                  alt="Imagen de Fan Art con personajes principales"
+                />
+                <div
+                  class="card-body nimate__animated animate__fadeIn"
+                  data-aos="fade-up"
+                >
+                  <h3 class="card-title">Personajes Principales</h3>
+                  <p class="card-text">
+                    Los personajes principales en Super Mario World incluyen a
+                    Mario, Luigi, la Princesa Peach y Bowser. Mario y Luigi son
+                    los héroes jugables que deben enfrentarse a Bowser...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+              <div
+                class="card animate__animated animate__fadeIn"
+                data-aos="fade-up"
+              >
+                <img
+                  src="./images/seccion/seccion04.jpg"
+                  class="card-img-top"
+                  alt="Imagen de Mario con Yoshi con las nuevas caracteristicas de poder volar"
+                />
+                <div
+                  class="card-body nimate__animated animate__fadeIn"
+                  data-aos="fade-up"
+                >
+                  <h3 class="card-title">Nuevas Habilidades y Power-Ups</h3>
+                  <p class="card-text">
+                    Super Mario World introduce varios power-ups nuevos,
+                    incluyendo la capa de vuelo que permite a Mario planear y
+                    volar...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+              <div
+                class="card animate__animated animate__fadeIn"
+                data-aos="fade-up"
+              >
+                <img
+                  src="./images/seccion/seccion05.jpg"
+                  class="card-img-top"
+                  alt="Imagen del mundo de Super Mario World"
+                />
+                <div
+                  class="card-body nimate__animated animate__fadeIn"
+                  data-aos="fade-up"
+                >
+                  <h3 class="card-title">Mundo y Niveles</h3>
+                  <p class="card-text">
+                    El juego presenta un extenso mapa de Dinosaur Land, dividido
+                    en varios niveles temáticos y mundos. Cada mundo ofrece una
+                    variedad de desafíos y secretos...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+              <div
+                class="card animate__animated animate__fadeIn"
+                data-aos="fade-up"
+              >
+                <img
+                  src="./images/seccion/seccion06.jpg"
+                  class="card-img-top"
+                  alt="Imagen de Fan Art de agradecimiento por el legado de la franquicia de Supwer Mario"
+                />
+                <div
+                  class="card-body nimate__animated animate__fadeIn"
+                  data-aos="fade-up"
+                >
+                  <h3 class="card-title">Impacto y Legado</h3>
+                  <p class="card-text">
+                    Super Mario World es considerado uno de los mejores
+                    videojuegos de todos los tiempos y ha tenido un impacto
+                    duradero en la industria de los videojuegos...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <article class="container my-5" data-aos="fade-up">
+      <h4
+        class="text-center fs-4 my-4 animate__animated animate__fadeIn"
+        data-aos="fade-up"
+      >
+        Descubre los Secretos Ocultos de Super Mario World
+      </h4>
+
+      <section>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div
+              class="card secret-card animate__animated animate__fadeIn"
+              data-aos="fade-up"
+            >
+              <img
+                src="./images/galeria/secret1.jpg"
+                class="card-img-top"
+                alt="Imagen de una etapa bonus"
+              />
+              <div
+                class="card-body animate__animated animate__fadeIn"
+                data-aos="fade-up"
+              >
+                <h5 class="card-title">Mini Bonus</h5>
+                <p class="card-text">
+                  Explora los emocionantes bonus en Super Mario World para
+                  obtener vidas extras.
+                </p>
+                <a href="./pages/secretos.html#secrets1" class="btn btn-primary"
+                  >Ver Más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card secret-card animate__animated animate__fadeIn"
+              data-aos="fade-up"
+            >
+              <img
+                src="./images/galeria/secret2b.jpg"
+                class="card-img-top"
+                alt="Imagen del mundo especial de las estrellas"
+              />
+              <div
+                class="card-body animate__animated animate__fadeIn"
+                data-aos="fade-up"
+              >
+                <h5 class="card-title">Star road</h5>
+                <p class="card-text">
+                  Star Road en Super Mario World es un mundo especial lleno de
+                  emoción y desafíos.
+                </p>
+                <a href="./pages/secretos.html#secrets2" class="btn btn-primary"
+                  >Ver Más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card secret-card animate__animated animate__fadeIn"
+              data-aos="fade-up"
+            >
+              <img
+                src="./images/galeria/secret3.jpg"
+                class="card-img-top"
+                alt="Imagen del mundo especial escondido dentro del juego"
+              />
+              <div
+                class="card-body animate__animated animate__fadeIn"
+                data-aos="fade-up"
+              >
+                <h5 class="card-title">Mundo Especial</h5>
+                <p class="card-text">
+                  Explora los secretos más desafiantes de Super Mario World.
+                </p>
+                <a href="./pages/secretos.html#secrets3" class="btn btn-primary"
+                  >Ver Más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Seccion del trailer del juego -->
+
+    <section
+      class="gameplay-video container text-center py-5"
+      data-aos="fade-up"
+    >
+      <h5 class="animate__animated animate__fadeIn" data-aos="fade-up">
+        Echa un vistazo al trailer
+      </h5>
+      <p class="mb-4 animate__animated animate__fadeIn" data-aos="fade-up">
+        Aquí tienes el trailer del juego. ¡No te lo pierdas!
+      </p>
+      <div
+        class="video-wrapper animate__animated animate__fadeIn"
+        data-aos="fade-up"
+      >
+        <iframe
+          class="img-fluid"
+          src="https://www.youtube.com/embed/-WpgCFSLtLo?si=v-C6lc8yGeIS2wo4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Comienzo del footer -->
+
+    <footer class="bg-primary text-white text-center py-4">
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="./images/logos/footer.png"
+            alt="Logo de footer de Super Mario World"
+            class="footer-logo mb-3"
+          />
+        </a>
+        <p class="footer-text mb-1">Fans page oficial</p>
+        <p class="footer-text mb-1">@ 2024 LofiCompany</p>
+        <p class="footer-text mb-0">Diseñado por CMZ</p>
+        <div class="iconos-redes">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="social-icon me-3"
+          >
+            <img src="./images/logos/facebook.png" alt="Logo de Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="social-icon me-3"
+          >
+            <img src="./images/logos/instagram.png" alt="Logo de Instagram" />
+          </a>
+          <a href="https://discord.com/" target="_blank" class="social-icon">
+            <img src="./images/logos/discord.png" alt="Logo de Discord" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
